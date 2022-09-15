@@ -1,6 +1,6 @@
 name: m_toast
 description: mtoast
-version: 0.0.6
+version: 0.1.1
 homepage: https://github.com/abdulmanafpfassal/mtoast
 
 environment:
@@ -8,7 +8,6 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  cupertino_icons: ^1.0.5
   flutter:
     sdk: flutter
 

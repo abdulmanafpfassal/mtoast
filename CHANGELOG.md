@@ -1,4 +1,4 @@
-## 0.0.6
+## 0.1.1
 
 ## Fixed
 - Added Custom Edit Options
