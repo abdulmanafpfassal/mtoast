@@ -46,13 +46,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             OutlinedButton(
               onPressed: (){
-                toast.successToast(context);
+                toast.successToast(context, message: "bsjhjshj");
               },
               child: Text("Show Success Toast"),
             ),
             OutlinedButton(
               onPressed: (){
-                toast.errorToast(context);
+                toast.errorToast(context, message: "dhsdkjw",);
               },
               child: Text("Show Error Toast"),
             ),
