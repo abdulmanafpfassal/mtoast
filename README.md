@@ -12,7 +12,7 @@ Toast Library for Flutter
 
 ```yaml
 # add this line to your dependencies
-mtoast: ^0.0.1
+m_toast: ^0.0.1
 ```
 
 ```dart
