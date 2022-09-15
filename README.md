@@ -2,6 +2,7 @@
 
 Toast Library for Flutter
 
+[![Pub](https://img.shields.io/pub/likes/m_toast?style=for-the-badge)][![Pub](https://img.shields.io/pub/points/m_toast?style=plastic)]
 
 # Supported Platforms
 >
@@ -12,7 +13,7 @@ Toast Library for Flutter
 
 ```yaml
 # add this line to your dependencies
-m_toast: ^0.0.1
+m_toast: ^0.0.4
 ```
 
 ```dart
@@ -24,8 +25,8 @@ import 'package:m_toast/m_toast.dart';
 ```dart
 ShowMToast toast = ShowMToast();
 
-toast.successToast(context);
-toast.errorToast(context);
+toast.successToast(context, message: "Hello");
+toast.errorToast(context, message: "Hello");
 ```
 
 ## Preview Images (No BuildContext)

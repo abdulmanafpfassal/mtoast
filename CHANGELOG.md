@@ -1,3 +1,5 @@
-## 0.0.1
+## 0.0.4
 
-* TODO: Describe initial release.
+## Fixed
+- Added Custom Edit Options
+- Update README
