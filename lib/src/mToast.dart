@@ -5,8 +5,10 @@ class MErrorToast extends StatelessWidget {
   Color? color;
   IconData? icon;
   Color? iconColor;
+  Color? textColor;
 
-  MErrorToast({Key? key, required this.message, this.color, this.icon, this.iconColor}) : super(key: key);
+
+  MErrorToast({Key? key, required this.message, this.color, this.icon, this.iconColor, this.textColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class MErrorToast extends StatelessWidget {
                   )),
               Expanded(
                 child: Text(message,
-                  style: TextStyle(fontStyle: FontStyle.normal),
+                  style: TextStyle(fontStyle: FontStyle.normal, color: textColor),
                   overflow: TextOverflow.ellipsis,
                   maxLines: 10,
                 ),
@@ -48,7 +50,9 @@ class MSuccessToast extends StatelessWidget {
   Color? color;
   IconData? icon;
   Color? iconColor;
-  MSuccessToast({Key? key, required this.message, this.color, this.iconColor, this.icon}) : super(key: key);
+  Color? textColor;
+
+  MSuccessToast({Key? key, required this.message, this.color, this.iconColor, this.icon, this.textColor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +60,7 @@ class MSuccessToast extends StatelessWidget {
       onWillPop: () async =>  false,
       child: Dialog(
         alignment: Alignment.bottomCenter,
-        backgroundColor: color != null ? color : Color(0xFFFDEDEE),
+        backgroundColor: color != null ? color : Color(0xFFEAF7EE),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
         elevation: 0,
@@ -67,12 +71,12 @@ class MSuccessToast extends StatelessWidget {
               Container(
                   margin: EdgeInsets.all(10.0),
                   child: Icon(
-                    icon != null ? icon : Icons.error,
-                    color: iconColor != null ? iconColor : Color(0xFFF14E63),
+                    icon != null ? icon : Icons.check_circle,
+                    color: iconColor != null ? iconColor : Color(0xFF3BB55D),
                   )),
               Expanded(
                 child: Text(message,
-                  style: TextStyle(fontStyle: FontStyle.normal),
+                  style: TextStyle(fontStyle: FontStyle.normal, color: textColor),
                   overflow: TextOverflow.ellipsis,
                   maxLines: 10,
                 ),
@@ -88,7 +92,7 @@ class MSuccessToast extends StatelessWidget {
 
 class ShowMToast {
 
-  errorToast(BuildContext context, {required String message, Color? color, IconData? icon, Color? iconColor}) {
+  errorToast(BuildContext context, {required String message, Color? color, IconData? icon, Color? iconColor, Color? textColor}) {
     return showDialog(
         barrierDismissible: true,
         barrierColor: Colors.white.withOpacity(0),
@@ -97,11 +101,11 @@ class ShowMToast {
           Future.delayed(Duration(milliseconds: 1500), () {
             Navigator.of(context).pop();
           });
-          return MErrorToast(message: message,color: color,icon: icon,iconColor: iconColor,);
+          return MErrorToast(message: message,color: color,icon: icon,iconColor: iconColor,textColor: textColor,);
         });
   }
 
-  successToast(BuildContext context, {required String message,Color? color, IconData? icon, Color? iconColor}) {
+  successToast(BuildContext context, {required String message,Color? color, IconData? icon, Color? iconColor, Color? textColor}) {
     return showDialog(
         barrierDismissible: true,
         barrierColor: Colors.white.withOpacity(0),
@@ -110,7 +114,7 @@ class ShowMToast {
           Future.delayed(Duration(milliseconds: 1500), () {
             Navigator.of(context).pop();
           });
-          return MSuccessToast(message: message,color: color,icon: icon,iconColor: iconColor,);
+          return MSuccessToast(message: message,color: color,icon: icon,iconColor: iconColor,textColor: textColor,);
         });
   }
 }
