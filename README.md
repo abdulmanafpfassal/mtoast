@@ -2,7 +2,7 @@
 
 Toast Library for Flutter
 
-[![Pub](https://img.shields.io/pub/likes/m_toast?style=for-the-badge)][![Pub](https://img.shields.io/pub/points/m_toast?style=plastic)]
+[Pub](https://img.shields.io/pub/likes/m_toast)[Pub](https://img.shields.io/pub/points/m_toast?style=plastic)
 
 # Supported Platforms
 >
@@ -13,7 +13,7 @@ Toast Library for Flutter
 
 ```yaml
 # add this line to your dependencies
-m_toast: ^0.0.4
+m_toast: ^0.0.6
 ```
 
 ```dart
