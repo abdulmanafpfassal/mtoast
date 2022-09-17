@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'M Toast Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter M Toast Demo Home Page'),
     );
   }
 }
@@ -46,13 +46,13 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             OutlinedButton(
               onPressed: (){
-                toast.successToast(context, message: "Success",);
+                toast.successToast(context, message: "Message Sent",image: "assets/twitter_logo.png", backgroundColor: Colors.white, alignment: Alignment.topCenter, duration: 1500);
               },
               child: Text("Show Success Toast"),
             ),
             OutlinedButton(
               onPressed: (){
-                toast.errorToast(context, message: "Error",);
+                toast.errorToast(context, message: "Message not Send",image: "assets/twitter_logo.png", backgroundColor: Colors.white, alignment: Alignment.topCenter);
               },
               child: Text("Show Error Toast"),
             ),
