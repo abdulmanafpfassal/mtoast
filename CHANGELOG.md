@@ -1,6 +1,6 @@
 ## 0.1.1
 
-## Fixed
+## Added
 - Added Custom Edit Options
 - Update README
 
@@ -14,6 +14,12 @@
 
 ## 0.1.4
 
-## Added
-- Bugs Fixed
+## Fixed
+- Bugs
+- Update README
+
+## 0.1.5
+
+## Fixed
+- Bugs
 - Update README

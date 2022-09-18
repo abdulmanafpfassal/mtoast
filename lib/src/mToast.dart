@@ -136,7 +136,8 @@ class ShowMToast {
       final Color? iconColor,
       final Color? textColor,
       final String? image,
-      required final AlignmentGeometry alignment,final int duration = 1500}) {
+      required final AlignmentGeometry alignment,
+      final int duration = 1500}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -164,7 +165,8 @@ class ShowMToast {
       final Color? iconColor,
       final Color? textColor,
       final String? image,
-      required final AlignmentGeometry alignment, final int duration = 1500}) {
+      required final AlignmentGeometry alignment,
+      final int duration = 1500}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),

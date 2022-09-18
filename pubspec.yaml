@@ -1,6 +1,6 @@
 name: m_toast
 description: Custom Toast for flutter, easily create toast with one line of code.
-version: 0.1.4
+version: 0.1.5
 homepage: https://github.com/abdulmanafpfassal/mtoast.git
 
 environment:
