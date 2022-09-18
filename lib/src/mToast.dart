@@ -138,7 +138,7 @@ class ShowMToast {
       String? image,
       required AlignmentGeometry alignment, int duration = 1500}) {
     return showDialog(
-        barrierDismissible: true,
+        barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
         context: context,
         builder: (_) {
@@ -166,7 +166,7 @@ class ShowMToast {
       String? image,
       required AlignmentGeometry alignment, int duration = 1500}) {
     return showDialog(
-        barrierDismissible: true,
+        barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
         context: context,
         builder: (_) {

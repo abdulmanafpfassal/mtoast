@@ -19,7 +19,7 @@ Toast Library for Flutter
 
 ```yaml
 # add this line to your dependencies
-m_toast: ^0.1.3
+m_toast: ^0.1.4
 ```
 
 ```dart
@@ -42,7 +42,7 @@ toast.errorToast(context, message: "Hello");
 
 ## Toast with custom images
 
-<img src="https://raw.githubusercontent.com/abdulmanafpfassal/image/7935e29fd63772719f0822cb3d6ed89fed356361/Screenshot_20220917_202821.png" width="320px" />
+<img src="https://raw.githubusercontent.com/abdulmanafpfassal/image/master/Screenshot_20220917_202519.png" width="320px" />
 <img src="https://raw.githubusercontent.com/abdulmanafpfassal/image/master/Screenshot_20220917_202303.png" />
 
 MToast have default style, and you also can custom style or other behavior.
@@ -51,7 +51,7 @@ MToast have default style, and you also can custom style or other behavior.
 | :------------------: | :---------------------: | :------: | :-----------------------------------------------------------: |
 |       message        |        String           | required |                     Toast message                             |
 |      textColor       |        Color            | optional |              Color of text(toast message)                     |
-|   backgroundColor    |          Color          | optional |                        backroundColor                         |
+|   backgroundColor    |          Color          | optional |                        backgroundColor                         |
 |       alignment      |      ToastPosition      | required |                                                               |
 |      iconColor       |          Color          | optional | If Color is not given the icon will adapt the default color   |
 |        icon          |        IconData         | optional |                   Icon in Toast                               |

@@ -11,3 +11,9 @@
 - Can Align Toast to top/bottom
 - Update README
 - Update Example
+
+## 0.1.4
+
+## Added
+- Bugs Fixed
+- Update README
