@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class MErrorToast extends StatelessWidget {
-  String message;
-  Color? color;
-  IconData? icon;
-  Color? iconColor;
-  Color? textColor;
-  String? image;
-  AlignmentGeometry? alignment;
+  final String message;
+  final Color? color;
+  final IconData? icon;
+  final Color? iconColor;
+  final Color? textColor;
+  final String? image;
+  final AlignmentGeometry? alignment;
 
   MErrorToast(
       {Key? key,
@@ -65,13 +65,13 @@ class MErrorToast extends StatelessWidget {
 }
 
 class MSuccessToast extends StatelessWidget {
-  String message;
-  Color? color;
-  IconData? icon;
-  Color? iconColor;
-  Color? textColor;
-  String? image;
-  AlignmentGeometry alignment;
+  final String message;
+  final Color? color;
+  final IconData? icon;
+  final Color? iconColor;
+  final Color? textColor;
+  final String? image;
+  final AlignmentGeometry? alignment;
 
   MSuccessToast(
       {Key? key,
@@ -130,13 +130,13 @@ class MSuccessToast extends StatelessWidget {
 
 class ShowMToast {
   errorToast(BuildContext context,
-      {required String message,
-      Color? backgroundColor,
-      IconData? icon,
-      Color? iconColor,
-      Color? textColor,
-      String? image,
-      required AlignmentGeometry alignment, int duration = 1500}) {
+      {required final String message,
+      final Color? backgroundColor,
+      final IconData? icon,
+      final Color? iconColor,
+      final Color? textColor,
+      final String? image,
+      required final AlignmentGeometry alignment,final int duration = 1500}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -158,13 +158,13 @@ class ShowMToast {
   }
 
   successToast(BuildContext context,
-      {required String message,
-      Color? backgroundColor,
-      IconData? icon,
-      Color? iconColor,
-      Color? textColor,
-      String? image,
-      required AlignmentGeometry alignment, int duration = 1500}) {
+      {required final String message,
+      final Color? backgroundColor,
+      final IconData? icon,
+      final Color? iconColor,
+      final Color? textColor,
+      final String? image,
+      required final AlignmentGeometry alignment, final int duration = 1500}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
