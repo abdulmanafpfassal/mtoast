@@ -23,3 +23,9 @@
 ## Fixed
 - Bugs
 - Update README
+
+## 0.1.6s
+
+## Fixed
+- Bugs
+- Update README
