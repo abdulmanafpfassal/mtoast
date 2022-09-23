@@ -139,7 +139,7 @@ class ShowMToast {
       final Color? textColor,
       final String? image,
       required final AlignmentGeometry alignment,
-      final int duration = 1500, final dynamic elevation = 0}) {
+      final int duration = 1500, final dynamic elevation = 0.0}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -169,7 +169,7 @@ class ShowMToast {
       final Color? textColor,
       final String? image,
       required final AlignmentGeometry alignment,
-      final int duration = 1500, final dynamic elevation = 0}) {
+      final int duration = 1500, final dynamic elevation = 0.0}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),

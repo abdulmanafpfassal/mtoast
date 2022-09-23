@@ -24,8 +24,13 @@
 - Bugs
 - Update README
 
-## 0.1.6s
+## 0.1.6
 
 ## Fixed
+- Bugs
+- Update README
+
+## 0.1.7
+##Fixed
 - Bugs
 - Update README
