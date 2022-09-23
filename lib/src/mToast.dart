@@ -8,6 +8,7 @@ class MErrorToast extends StatelessWidget {
   final Color? textColor;
   final String? image;
   final AlignmentGeometry? alignment;
+  final dynamic elevation;
 
   MErrorToast(
       {Key? key,
@@ -17,7 +18,7 @@ class MErrorToast extends StatelessWidget {
       this.iconColor,
       this.textColor,
       this.image,
-      required this.alignment})
+      required this.alignment, this.elevation})
       : super(key: key);
 
   @override
@@ -29,7 +30,7 @@ class MErrorToast extends StatelessWidget {
         backgroundColor: color != null ? color : Color(0xFFFDEDEE),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
-        elevation: 0,
+        elevation: elevation,
         child: Container(
           //height: MediaQuery.of(context).size.height / 13,
           child: Row(
@@ -72,6 +73,7 @@ class MSuccessToast extends StatelessWidget {
   final Color? textColor;
   final String? image;
   final AlignmentGeometry? alignment;
+  final dynamic elevation;
 
   MSuccessToast(
       {Key? key,
@@ -81,7 +83,7 @@ class MSuccessToast extends StatelessWidget {
       this.icon,
       this.textColor,
       this.image,
-      required this.alignment})
+      required this.alignment, this.elevation})
       : super(key: key);
 
   @override
@@ -93,7 +95,7 @@ class MSuccessToast extends StatelessWidget {
         backgroundColor: color != null ? color : Color(0xFFEAF7EE),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
-        elevation: 0,
+        elevation: elevation,
         child: Container(
           //height: MediaQuery.of(context).size.height / 13,
           child: Row(
@@ -137,7 +139,7 @@ class ShowMToast {
       final Color? textColor,
       final String? image,
       required final AlignmentGeometry alignment,
-      final int duration = 1500}) {
+      final int duration = 1500, final dynamic elevation = 0}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -154,6 +156,7 @@ class ShowMToast {
             textColor: textColor,
             image: image,
             alignment: alignment,
+            elevation: elevation,
           );
         });
   }
@@ -166,7 +169,7 @@ class ShowMToast {
       final Color? textColor,
       final String? image,
       required final AlignmentGeometry alignment,
-      final int duration = 1500}) {
+      final int duration = 1500, final dynamic elevation = 0}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -183,6 +186,7 @@ class ShowMToast {
             textColor: textColor,
             image: image,
             alignment: alignment,
+            elevation: elevation,
           );
         });
   }
