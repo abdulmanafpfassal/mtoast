@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:m_toast/m_toast.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -41,24 +40,32 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            OutlinedButton(
-              onPressed: (){
-                toast.successToast(context, message: "Message Sent",image: "assets/twitter_logo.png", backgroundColor: Colors.white, alignment: Alignment.topCenter, duration: 1500);
-              },
-              child: Text("Show Success Toast"),
-            ),
-            OutlinedButton(
-              onPressed: (){
-                toast.errorToast(context, message: "Message not Send",image: "assets/twitter_logo.png", backgroundColor: Colors.white, alignment: Alignment.topCenter);
-              },
-              child: Text("Show Error Toast"),
-            ),
-          ],
-        )
-      ),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          OutlinedButton(
+            onPressed: () {
+              toast.successToast(context,
+                  message: "Message Sent",
+                  image: "assets/twitter_logo.png",
+                  backgroundColor: Colors.white,
+                  alignment: Alignment.topCenter,
+                  duration: 1500);
+            },
+            child: Text("Show Success Toast"),
+          ),
+          OutlinedButton(
+            onPressed: () {
+              toast.errorToast(context,
+                  message: "Message not Send",
+                  image: "assets/twitter_logo.png",
+                  backgroundColor: Colors.white,
+                  alignment: Alignment.topCenter);
+            },
+            child: Text("Show Error Toast"),
+          ),
+        ],
+      )),
     );
   }
 }

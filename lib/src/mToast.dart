@@ -18,7 +18,8 @@ class MErrorToast extends StatelessWidget {
       this.iconColor,
       this.textColor,
       this.image,
-      required this.alignment, this.elevation})
+      required this.alignment,
+      this.elevation})
       : super(key: key);
 
   @override
@@ -83,7 +84,8 @@ class MSuccessToast extends StatelessWidget {
       this.icon,
       this.textColor,
       this.image,
-      required this.alignment, this.elevation})
+      required this.alignment,
+      this.elevation})
       : super(key: key);
 
   @override
@@ -139,7 +141,8 @@ class ShowMToast {
       final Color? textColor,
       final String? image,
       required final AlignmentGeometry alignment,
-      final int duration = 1500, final dynamic elevation = 0.0}) {
+      final int duration = 1500,
+      final dynamic elevation = 0.0}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -169,7 +172,8 @@ class ShowMToast {
       final Color? textColor,
       final String? image,
       required final AlignmentGeometry alignment,
-      final int duration = 1500, final dynamic elevation = 0.0}) {
+      final int duration = 1500,
+      final dynamic elevation = 0.0}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),

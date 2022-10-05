@@ -5,8 +5,8 @@
 
 Toast Library for Flutter
 
-
 # Supported Platforms
+
 >
 > - Android
 > - IOS
@@ -15,7 +15,14 @@ Toast Library for Flutter
 > - MacOS
 > - Windows
 
-## How to Use
+## Features
+
+- Add toast with custom icons, color and message
+- Add toast with custom images, color and message
+
+## Getting Started
+
+In order to add m_toast to your project add this line to your `pubspec.yaml` file
 
 ```yaml
 # add this line to your dependencies
@@ -29,10 +36,17 @@ import 'package:m_toast/m_toast.dart';
 ### To call the toast
 
 ```dart
+
 ShowMToast toast = ShowMToast();
 
-toast.successToast(context, message: "Hello");
-toast.errorToast(context, message: "Hello");
+toast.successToast(context, message: "
+Hello
+"
+);
+toast.errorToast(context, message: "
+Hello
+"
+);
 ```
 
 ## Preview Images
@@ -57,8 +71,14 @@ MToast have default style, and you also can custom style or other behavior.
 |        icon          |        IconData         | optional |                   Icon in Toast                               |
 |        image         |      AssetImage         | optional |                   Image instead of Icon                       |
 |       duration       |         int             | optional |Duration should be given in milliseconds(for eg duration: 1500)|
+|       elevation      |        double           | optional |                          Elevation(0.0)                       |
 
-## If you need any features suggest
+## Contribution
 
-...
+Of course the project is open source, and you can contribute to
+it [repository link](https://pub.dev/packages/m_toast)
+
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
 
