@@ -34,3 +34,7 @@
 ##Fixed
 - Bugs
 - Update README
+
+## 0.1.7
+##Fixed
+- Update README

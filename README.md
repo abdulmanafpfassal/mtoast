@@ -26,7 +26,7 @@ In order to add m_toast to your project add this line to your `pubspec.yaml` fil
 
 ```yaml
 # add this line to your dependencies
-m_toast: ^0.1.7
+m_toast: ^0.1.8
 ```
 
 ```dart
