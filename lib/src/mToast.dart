@@ -9,6 +9,7 @@ class MErrorToast extends StatelessWidget {
   final String? image;
   final AlignmentGeometry? alignment;
   final dynamic elevation;
+  final double width;
 
   MErrorToast(
       {Key? key,
@@ -19,7 +20,8 @@ class MErrorToast extends StatelessWidget {
       this.textColor,
       this.image,
       required this.alignment,
-      this.elevation})
+      this.elevation,
+      this.width = double.infinity})
       : super(key: key);
 
   @override
@@ -33,6 +35,7 @@ class MErrorToast extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
         elevation: elevation,
         child: Container(
+          width: width,
           //height: MediaQuery.of(context).size.height / 13,
           child: Row(
             children: [
@@ -75,6 +78,7 @@ class MSuccessToast extends StatelessWidget {
   final String? image;
   final AlignmentGeometry? alignment;
   final dynamic elevation;
+  final double width;
 
   MSuccessToast(
       {Key? key,
@@ -85,7 +89,8 @@ class MSuccessToast extends StatelessWidget {
       this.textColor,
       this.image,
       required this.alignment,
-      this.elevation})
+      this.elevation,
+      this.width = double.infinity})
       : super(key: key);
 
   @override
@@ -99,6 +104,7 @@ class MSuccessToast extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(10.0))),
         elevation: elevation,
         child: Container(
+          width: width,
           //height: MediaQuery.of(context).size.height / 13,
           child: Row(
             children: [
@@ -142,7 +148,8 @@ class ShowMToast {
       final String? image,
       required final AlignmentGeometry alignment,
       final int duration = 1500,
-      final dynamic elevation = 0.0}) {
+      final dynamic elevation = 0.0,
+      final double width = double.infinity}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -160,6 +167,7 @@ class ShowMToast {
             image: image,
             alignment: alignment,
             elevation: elevation,
+            width: width,
           );
         });
   }
@@ -173,7 +181,8 @@ class ShowMToast {
       final String? image,
       required final AlignmentGeometry alignment,
       final int duration = 1500,
-      final dynamic elevation = 0.0}) {
+      final dynamic elevation = 0.0,
+      final double width = double.infinity}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
@@ -191,6 +200,7 @@ class ShowMToast {
             image: image,
             alignment: alignment,
             elevation: elevation,
+            width: width,
           );
         });
   }
