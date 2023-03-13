@@ -26,7 +26,7 @@ In order to add m_toast to your project add this line to your `pubspec.yaml` fil
 
 ```yaml
 # add this line to your dependencies
-m_toast: ^0.1.8
+m_toast: ^0.1.9
 ```
 
 ```dart
@@ -57,7 +57,7 @@ Hello
 ## Toast with custom images
 
 <img src="https://raw.githubusercontent.com/abdulmanafpfassal/image/master/Screenshot_20220917_202519.png" width="320px" />
-<img src="https://raw.githubusercontent.com/abdulmanafpfassal/image/master/Screenshot_20220917_202303.png" />
+<img src="https://raw.githubusercontent.com/abdulmanafpfassal/image/master/Screenshot_20220917_202303.png" width="320px"/>
 
 MToast have default style, and you also can custom style or other behavior.
 
