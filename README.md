@@ -77,7 +77,7 @@ MToast have default style, and you also can custom style or other behavior.
 ## Contribution
 
 Of course the project is open source, and you can contribute to
-it [repository link](https://pub.dev/packages/m_toast)
+it [repository link](https://github.com/abdulmanafpfassal/mtoast)
 
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
