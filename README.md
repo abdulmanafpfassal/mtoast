@@ -61,17 +61,18 @@ Hello
 
 MToast have default style, and you also can custom style or other behavior.
 
-|         name         |          type           |   need   |                             desc                              |
-| :------------------: | :---------------------: | :------: | :-----------------------------------------------------------: |
-|       message        |        String           | required |                     Toast message                             |
-|      textColor       |        Color            | optional |              Color of text(toast message)                     |
-|   backgroundColor    |          Color          | optional |                        backgroundColor                         |
-|       alignment      |      ToastPosition      | required |                                                               |
-|      iconColor       |          Color          | optional | If Color is not given the icon will adapt the default color   |
-|        icon          |        IconData         | optional |                   Icon in Toast                               |
-|        image         |      AssetImage         | optional |                   Image instead of Icon                       |
-|       duration       |         int             | optional |Duration should be given in milliseconds(for eg duration: 1500)|
-|       elevation      |        double           | optional |                          Elevation(0.0)                       |
+|      name       |          type           |   need   |                              desc                               |
+|:---------------:| :---------------------: | :------: |:---------------------------------------------------------------:|
+|     message     |        String           | required |                          Toast message                          |
+|    textColor    |        Color            | optional |                  Color of text(toast message)                   |
+| backgroundColor |          Color          | optional |                         backgroundColor                         |
+|    alignment    |      ToastPosition      | required |                                                                 |
+|    iconColor    |          Color          | optional |   If Color is not given the icon will adapt the default color   |
+|      icon       |        IconData         | optional |                          Icon in Toast                          |
+|      image      |      AssetImage         | optional |                      Image instead of Icon                      |
+|    duration     |         int             | optional | Duration should be given in milliseconds(for eg duration: 1500) |
+|    elevation    |        double           | optional |                         Elevation(0.0)                          |
+|      width      |        double           | optional |                              width                              |
 
 ## Contribution
 
