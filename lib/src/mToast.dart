@@ -138,25 +138,30 @@ class MSuccessToast extends StatelessWidget {
   }
 }
 
+
 class ShowMToast {
-  errorToast(BuildContext context,
+  final BuildContext globalContext;
+
+  ShowMToast(this.globalContext);
+
+  errorToast(
       {required final String message,
-      final Color? backgroundColor,
-      final IconData? icon,
-      final Color? iconColor,
-      final Color? textColor,
-      final String? image,
-      required final AlignmentGeometry alignment,
-      final int duration = 1500,
-      final dynamic elevation = 0.0,
-      final double width = double.infinity}) {
+        final Color? backgroundColor,
+        final IconData? icon,
+        final Color? iconColor,
+        final Color? textColor,
+        final String? image,
+        required final AlignmentGeometry alignment,
+        final int duration = 1500,
+        final dynamic elevation = 0.0,
+        final double width = double.infinity}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
-        context: context,
+        context: globalContext, // Use the global context here
         builder: (_) {
           Future.delayed(Duration(milliseconds: duration), () {
-            Navigator.of(context).pop();
+            Navigator.of(globalContext).pop();
           });
           return MErrorToast(
             message: message,
@@ -172,24 +177,24 @@ class ShowMToast {
         });
   }
 
-  successToast(BuildContext context,
+  successToast(
       {required final String message,
-      final Color? backgroundColor,
-      final IconData? icon,
-      final Color? iconColor,
-      final Color? textColor,
-      final String? image,
-      required final AlignmentGeometry alignment,
-      final int duration = 1500,
-      final dynamic elevation = 0.0,
-      final double width = double.infinity}) {
+        final Color? backgroundColor,
+        final IconData? icon,
+        final Color? iconColor,
+        final Color? textColor,
+        final String? image,
+        required final AlignmentGeometry alignment,
+        final int duration = 1500,
+        final dynamic elevation = 0.0,
+        final double width = double.infinity}) {
     return showDialog(
         barrierDismissible: false,
         barrierColor: Colors.white.withOpacity(0),
-        context: context,
+        context: globalContext, // Use the global context here
         builder: (_) {
           Future.delayed(Duration(milliseconds: duration), () {
-            Navigator.of(context).pop();
+            Navigator.of(globalContext).pop();
           });
           return MSuccessToast(
             message: message,
@@ -205,3 +210,4 @@ class ShowMToast {
         });
   }
 }
+

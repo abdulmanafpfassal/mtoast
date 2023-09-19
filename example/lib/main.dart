@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:m_toast/m_toast.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(home: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      key: NavigationService.navigatorKey,
       title: 'M Toast Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -31,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  ShowMToast toast = ShowMToast();
+  ShowMToast toast = ShowMToast(GlobalContext.getContext());
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           OutlinedButton(
             onPressed: () {
-              toast.successToast(context,
+              toast.successToast(
                   message: "Message Sent",
                   image: "assets/twitter_logo.png",
                   backgroundColor: Colors.white,
@@ -56,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           OutlinedButton(
             onPressed: () {
-              toast.errorToast(context,
+              toast.errorToast(
                   message: "Message not Send",
                   image: "assets/twitter_logo.png",
                   backgroundColor: Colors.white,
@@ -68,4 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
       )),
     );
   }
+}
+
+class GlobalContext{
+  static BuildContext getContext() {
+    return NavigationService.navigatorKey.currentContext!;
+  }
+}
+
+class NavigationService {
+  static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 }

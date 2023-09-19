@@ -38,3 +38,8 @@
 ## 0.1.8
 ##Fixed
 - Update README
+
+## 0.1.9
+##Fixed
+- Update README
+- Bug Fix
