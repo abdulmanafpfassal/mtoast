@@ -39,7 +39,12 @@
 ##Fixed
 - Update README
 
-## 0.1.9
+## 0.2.3
+##Fixed
+- Update README
+- Bug Fix
+
+## 0.2.4
 ##Fixed
 - Update README
 - Bug Fix

@@ -155,26 +155,29 @@ class ShowMToast {
         final int duration = 1500,
         final dynamic elevation = 0.0,
         final double width = double.infinity}) {
-    return showDialog(
-        barrierDismissible: false,
-        barrierColor: Colors.white.withOpacity(0),
-        context: globalContext, // Use the global context here
-        builder: (_) {
-          Future.delayed(Duration(milliseconds: duration), () {
-            Navigator.of(globalContext).pop();
+    FocusManager.instance.primaryFocus?.unfocus();
+    Future.delayed(Duration(seconds: 1), () {
+      return showDialog(
+          barrierDismissible: false,
+          barrierColor: Colors.white.withOpacity(0),
+          context: globalContext, // Use the global context here
+          builder: (_) {
+            Future.delayed(Duration(milliseconds: duration), () {
+              Navigator.of(globalContext).pop();
+            });
+            return MErrorToast(
+              message: message,
+              color: backgroundColor,
+              icon: icon,
+              iconColor: iconColor,
+              textColor: textColor,
+              image: image,
+              alignment: alignment,
+              elevation: elevation,
+              width: width,
+            );
           });
-          return MErrorToast(
-            message: message,
-            color: backgroundColor,
-            icon: icon,
-            iconColor: iconColor,
-            textColor: textColor,
-            image: image,
-            alignment: alignment,
-            elevation: elevation,
-            width: width,
-          );
-        });
+    });
   }
 
   successToast(
@@ -188,26 +191,29 @@ class ShowMToast {
         final int duration = 1500,
         final dynamic elevation = 0.0,
         final double width = double.infinity}) {
-    return showDialog(
-        barrierDismissible: false,
-        barrierColor: Colors.white.withOpacity(0),
-        context: globalContext, // Use the global context here
-        builder: (_) {
-          Future.delayed(Duration(milliseconds: duration), () {
-            Navigator.of(globalContext).pop();
+    FocusManager.instance.primaryFocus?.unfocus();
+    Future.delayed(Duration(seconds: 1), () {
+      return showDialog(
+          barrierDismissible: false,
+          barrierColor: Colors.white.withOpacity(0),
+          context: globalContext, // Use the global context here
+          builder: (_) {
+            Future.delayed(Duration(milliseconds: duration), () {
+              Navigator.of(globalContext).pop();
+            });
+            return MSuccessToast(
+              message: message,
+              color: backgroundColor,
+              icon: icon,
+              iconColor: iconColor,
+              textColor: textColor,
+              image: image,
+              alignment: alignment,
+              elevation: elevation,
+              width: width,
+            );
           });
-          return MSuccessToast(
-            message: message,
-            color: backgroundColor,
-            icon: icon,
-            iconColor: iconColor,
-            textColor: textColor,
-            image: image,
-            alignment: alignment,
-            elevation: elevation,
-            width: width,
-          );
-        });
+    });
   }
 }
 
